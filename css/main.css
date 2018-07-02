@@ -1,3 +1,389 @@
 /*
- * Estilos de tu proyecto
- */
+cores utilizadas: petroleo -> #2c3e50,
+                  verde -> #18bc9c
+
+fontes utilizadas:  https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800
+                    https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin-ext
+                    https://use.fontawesome.com/releases/v5.1.0/css/all.css
+*/
+
+/* CLASSES REUTILIZAVEIS */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before, :after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, p{
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.29vw;
+  line-height: 1.71429;
+}
+
+a, ul, li, h1, h2, h3, h4, h5, h6{
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+label{
+  font-size: 1.7vw;
+  color: #6C757D;
+}
+
+/* LINHA ESTRELA */
+hr{
+  display: block;
+  height: 0;
+  text-align: center;
+  box-sizing: content-box;
+  overflow: visible;
+}
+
+hr.star-white, hr.star-black{
+  width: 17.5vw;
+  padding: 0;
+  margin: .6vw 0;
+  border-top: solid .25vw;
+  text-align: center;
+}
+
+hr.star-white{
+  border-color: white;
+  background: white;
+}
+
+hr.star-black{
+  border-color: #2c3e50;
+  background: #2c3e50;
+}
+
+/* ESTRELAS - WHITE / BLACK */
+i.star-white:before, i.star-black:before{
+  position: relative;
+  top: -.98em;
+  padding: .25vw .55vw;
+  font-size: 2vw;
+}
+
+i.star-white:before{
+  color: white;
+  background-color: #18bc9c;
+}
+
+i.star-black:before{
+  color: #2c3e50;
+  background-color: white;
+}
+
+/* HEADER NAVEGACAO */
+div.banner{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 6.05vw;
+  padding: .6vw 10.8vw;
+  background-color: #2c3e50;
+}
+
+.logo{
+  display: flex;
+  font-size: 1.9vw;
+  margin-left: 0;
+  padding-top: .83vw;
+}
+
+.navi-bar{
+  display: flex;
+  list-style: none;
+}
+
+.navi-bar, li{
+  margin: .7vw .45vw;
+  font-size: 1.18vw;
+}
+
+/* HEADER CONTAINER */
+div.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.8vw;
+  width: 100%;
+  height: 48.7vw;
+  background-color: #18bc9c;
+}
+
+.img-header{
+  width: 17.8vw;
+  height: 17.8vw;
+}
+
+.title-header{
+  font-size: 5.15vw;
+  color: white;
+  margin: .5vw .2vw;
+}
+
+.sub-title{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.95vw;
+  font-weight: 400;
+  margin: -.3em .2vw;
+}
+
+/* PORTFOLIO */
+div.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5.9vw;
+  width: 100%;
+  height: 61.2vw;
+  background-color: white;
+}
+
+.title-portfolio{
+  font-size: 3.20vw;
+  font-weight: 900;
+  color: #2c3e50;
+  margin: .3vw;
+}
+
+.img-portfolio{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: -.5em;
+}
+
+.item{
+  width: auto;
+  height: 17.667vw;
+  margin-bottom: 2vw;
+  margin-left: .2vw;
+  margin-right: .2vw;
+}
+
+.space{
+  margin-left: 1.8vw;
+  margin-right: 1.8vw;
+}
+
+/* ABOUT */
+div.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.9vw;
+  width: 100%;
+  height: 39.7vw;
+  background-color: #18bc9c;
+}
+
+.title-about{
+  font-size: 3.20vw;
+  font-weight: 900;
+  color: white;
+  margin-bottom: .3vw;
+}
+
+.text-about{
+  display: flex;
+  margin-top: -.7em;
+}
+
+p, .loren{
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: -.03em;
+  color: white;
+  width: 25.5vw;
+  margin: .1vw .5vw !important;
+}
+
+.btn-about{
+  display: block;
+  position: relative;
+  border-radius: .5vw;
+  border: .2vw solid white;
+  background-color: #18bc9c;
+  margin-top: 2.2vw;
+  padding: .8vw 1vw;
+  width: auto;
+}
+
+.btn-download{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.icon i.fa-download{
+  color: white;
+}
+
+i.icon:before{
+  color: white;
+  font-size: 1.3vw;
+}
+
+/* CONTACT */
+div.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vw;
+  width: 100%;
+  height: 61.8vw;
+  background-color: white;
+}
+
+.title-contact{
+  font-size: 3.2vw;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: .3vw;
+}
+
+.form-contact{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 55vw;
+  margin-top: 1.2vw;
+}
+
+.input-form{
+  display: block;
+  font-size: 1.7vw;
+  color: #6C757D;
+  border: none;
+  border-bottom: .05vw solid #6666;
+  width: 51vw;
+  resize: none;
+  margin-bottom: 1.5vw;
+}
+
+.btn-send{
+  width: 5.5vw;
+  height: 3.3vw;
+  margin: 5.6vw .1vw;
+  background-color: #18BC9C;
+  color: #FFF;
+  font-size: 1.4vw;
+  font-weight: 700;
+  border-radius: .5vw;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+div.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  padding-top: 1.6vw;
+  width: 100%;
+  height: 23.5vw;
+  background-color: #2c3e50;
+}
+
+.column-footer{
+  display: block;
+  width: 100%;
+  height: 15.5vw;
+  text-align: center;
+}
+
+.title-footer{
+  font-size: 1.85vw;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+.text-footer{
+  text-align: center;
+  display: block;
+  padding-top: .3vw;
+  letter-spacing: -.04em;
+  line-height: 1.45;
+}
+
+.column-1{
+  padding-left: 9.7vw;
+  margin-right: .5vw;
+}
+
+.column-2{
+  width: 25.5vw;
+  padding-right: .5vw;
+}
+
+.column-3{
+  padding-right: 9.7vw;
+ }
+
+.link-footer{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #18BC9C;
+  letter-spacing: -.04em;
+}
+
+.link-footer:hover{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: -.04em;
+  text-decoration: underline;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 1.2vw;
+  letter-spacing: -.04em;
+  padding-right: 1.6vw;
+  padding-top: 5.8vw;
+}
+
+/* ICONS SOCIAL */
+.media-social{
+ display: flex;
+ margin: 1.8vw 1.3vw;
+ padding-left: .9vw;
+ list-style: none;
+}
+
+li .i-social{
+ padding-left: .1vw;
+ padding-top: .5vw;
+ width: 3.5vw;
+ height: 3.5vw;
+ color: white;
+ font-size: 1.29vw;
+ line-height: 2vw;
+ border: .15vw solid white;
+ border-radius: 100%;
+ cursor: pointer;
+}
+
+li:hover .i-social{
+ color: #18BC9C;
+ border: .15vw solid #18BC9C;
+ cursor: pointer;
+}
